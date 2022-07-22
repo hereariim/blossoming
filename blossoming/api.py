@@ -3,7 +3,6 @@ import shutil
 import tempfile
 from marshmallow import missing
 import yaml
-# from tqdm import tqdm
 from zipfile import ZipFile
 from skimage.io import imread, imsave, imread_collection, concatenate_images
 import numpy as np
@@ -32,16 +31,7 @@ from itertools import chain
 from skimage.transform import resize
 from skimage.morphology import label
 from skimage.color import rgb2gray
-from skimage.filters import threshold_otsu
-
 from tensorflow.keras.models import Model, load_model
-from tensorflow.keras.layers import Input, Conv2D, Conv2DTranspose, MaxPooling2D, concatenate
-from tensorflow.keras.layers import BatchNormalization, Activation, Dense, Dropout, experimental
-from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
-from tensorflow.keras.optimizers import Adam
-from tensorflow.keras import Sequential
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
-
 import tensorflow as tf
 import imshowpair
 from PIL import Image
